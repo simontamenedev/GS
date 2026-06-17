@@ -1,8 +1,8 @@
-import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { cn } from "@/utils/utils"
 import OurTrusted from "@/components/home/ourtrusted"
 import ProjectSuccess from "@/components/home/projectSuccess"
+import MissionVision from "@/components/home/missionVision"
 
 const Page = () => {
   const t = useTranslations("HomePage")
@@ -17,7 +17,7 @@ const Page = () => {
           loop
           muted
           playsInline
-          className='absolute inset-0 w-full h-full object-cover'
+          className='absolute inset-0 w-full h-1/2 object-cover'
         >
           <source src='/mining.mp4' type='video/mp4' />
           Your browser does not support the video tag.
@@ -44,10 +44,11 @@ const Page = () => {
               mining, logistics, and digital transformation company supporting
               Ethiopia’s long-term sustainable development.
             </p>
+            <MissionVision/>
           </div>
         </div>
       </section>
-
+ 
       {/* OurTrusted Component - Now visible below the hero */}
       <OurTrusted />
       <ProjectSuccess />

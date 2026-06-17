@@ -15,5 +15,29 @@
   },
   "Company": {
     "name": "GS Mining and Trading PLC"
+  },
+  "MissionVision": {
+    "badge": "About Us",
+    "title": "Our Mission & Vision",
+    "subtitle": "Driving sustainable transformation across Africa",
+    "visionTitle": "Vision",
+    "vision": "To become Africa's leading integrated green energy, smart infrastructure, electric mobility, mining, and technology company — driving sustainable industrial transformation, clean energy access, digital innovation, and inclusive economic growth across Ethiopia and beyond",
+    "visionCta": "Our ambition",
+    "missionTitle": "Mission",
+    "mission": "Green Share Future is committed to transforming Ethiopia's future through renewable energy systems, smart technologies, electric mobility, sustainable mining, digital infrastructure, and strategic industrial solutions. The company strives to create innovative, environmentally responsible, and economically impactful businesses that empower communities, create jobs, accelerate technological advancement, and contribute to national development",
+    "missionCta": "Our commitment",
+    "coreValuesTitle": "Core Values",
+    "coreValuesSubtitle": "The principles that guide everything we do",
+    "values": {
+      "sustainability": "Sustainability",
+      "innovation": "Innovation",
+      "integrity": "Integrity",
+      "excellence": "Excellence",
+      "partnership": "Partnership",
+      "empowerment": "Empowerment",
+      "resilience": "Resilience"
+    },
+    "footer": "Join us in building a sustainable future",
+    "ctaButton": "Get In Touch"
   }
 }
