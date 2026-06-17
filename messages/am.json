@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "ሰላም ዓለም!"
+  },
+  "Navigation": {
+    "home": "መነሻ",
+    "services": "አገልግሎቶች",
+    "resources": "ሀብቶች",
+    "getInTouch": "ያግኙን"
+  },
+  "Language": {
+    "english": "እንግሊዝኛ",
+    "amharic": "አማርኛ",
+    "selectLanguage": "ቋንቋ ይምረጡ"
+  },
+   "Company":{
+    "name":"ጂ ኤስ ማይኒንግ እና ትሬዲንግ ኃ.የተ.የግ.ማ"
+  }
+}

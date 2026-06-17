@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "resources": "Resources",
+    "getInTouch": "Get In Touch"
+  },
+  "Language": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "selectLanguage": "Select Language"
+  },
+  "Company": {
+    "name": "GS Mining and Trading PLC"
+  }
+}
