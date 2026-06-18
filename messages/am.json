@@ -1,12 +1,22 @@
 {
   "HomePage": {
-    "title": "ሰላም ዓለም!"
+    "title": "ሰላም ዓለም!",
+    "hero": {
+      "title": "የረጅም ጊዜ",
+      "titleHighlight": "የኮርፖሬት ምኞት",
+      "subtitle": "በሚታመን ተሰጥኦ የተደገፈ",
+      "description": "ግሪን ሼር ፊውቸር የኢትዮጵያን የረጅም ጊዜ ዘላቂ ልማት የሚደግፍ የተቀናጀ የአፍሪቃ አረንጓዴ ኢነርጂ፣ ስማርት መሠረተ ልማት፣ የኤሌክትሪክ ተንቀሳቃሽነት፣ ማዕድን፣ ሎጅስቲክስ እና ዲጂታል ትራንስፎርሜሽን ኩባንያ ለመሆን ተዘጋጅቷል።"
+    }
   },
   "Navigation": {
     "home": "መነሻ",
     "services": "አገልግሎቶች",
     "resources": "ሀብቶች",
-    "getInTouch": "ያግኙን"
+    "getInTouch": "ያግኙን",
+    "ourStory": "ታሪካችን",
+    "gallery": "ማዕከለ-ስዕላት",
+    "testimonials": "ምስክርነቶች",
+    "about": "ስለ እኛ"
   },
   "Language": {
     "english": "እንግሊዝኛ",
@@ -15,6 +25,56 @@
   },
   "Company": {
     "name": "ጂ ኤስ ማይኒንግ እና ትሬዲንግ ኃ.የተ.የግ.ማ"
+  },
+  "Resources": {
+    "title": "ሀብቶች",
+    "testimonials": "ምስክርነቶች",
+    "gallery": "ማዕከለ-ስዕላት",
+    "ourStory": "ታሪካችን",
+    "learn": "መማር",
+    "company": "ኩባንያ"
+  },
+  "TrustedBy": {
+    "title": "የታመነው በ",
+    "subtitle": "መሪ ኩባንያዎች እና ድርጅቶች"
+  },
+  "ProjectSuccess": {
+    "badge": "የእኛ ተጽዕኖ",
+    "title": "ሊለካ የሚችል",
+    "titleHighlight": "ስኬት",
+    "stats": {
+      "projectsDelivered": "የተላኩ ፕሮጀክቶች",
+      "clientSatisfaction": "የደንበኛ እርካታ",
+      "expertEngineers": "ባለሙያ መሐንዲሶች",
+      "globalClients": "ዓለም አቀፍ ደንበኞች",
+      "yearsExperience": "የልምድ ዓመታት"
+    }
+  },
+  "Services": {
+    "heading": "ምን",
+    "headingHighlight": "እናቀርባለን",
+    "title": "አገልግሎቶቻችን",
+    "subtitle": "ለንግድ ፍላጎቶችዎ የተዘጋጁ አጠቃላይ መፍትሄዎች",
+    "tech": {
+      "title": "የቴክኖሎጂ መፍትሄዎች",
+      "description": "ዘመናዊ ዲጂታል ትራንስፎርሜሽን እና ስማርት ቴክኖሎጂ መፍትሄዎች"
+    },
+    "mining": {
+      "title": "የማዕድን ሥራዎች",
+      "description": "ዘላቂ እና ቀልጣፋ የማዕድን ሥራዎች ከደህንነት በቀዳሚነት"
+    },
+    "importExport": {
+      "title": "አስመጪ እና ላኪ",
+      "description": "ለንግድ ፍላጎቶችዎ ዓለም አቀፍ የንግድ እና የሎጅስቲክስ መፍትሄዎች"
+    },
+    "energy": {
+      "title": "የኢነርጂ መፍትሄዎች",
+      "description": "አዳዲስ ታዳሽ የኢነርጂ እና የኃይል መፍትሄዎች"
+    },
+    "partnerships": {
+      "title": "ዓለም አቀፍ አጋርነቶች",
+      "description": "በአፍሪቃ እና በዓለም ዙሪያ ስትራቴጂካዊ አጋርነቶችን መገንባት"
+    }
   },
   "MissionVision": {
     "badge": "ስለ እኛ",
@@ -39,5 +99,69 @@
     },
     "footer": "ዘላቂ የወደፊት ጊዜ ለመገንባት ይቀላቀሉን",
     "ctaButton": "ያግኙን"
+  },
+  "Contact": {
+    "title": "ያግኙን",
+    "us": "",
+    "subtitle": "ጥያቄዎች አሉዎት? ከእርስዎ መስማት እንወዳለን።",
+    "phone": "ስልክ",
+    "email": "ኢሜይል",
+    "address": "አድራሻ",
+    "workingHours": "የስራ ሰዓታት",
+    "form": {
+      "name": "ሙሉ ስም",
+      "namePlaceholder": "ስምዎ",
+      "email": "ኢሜይል አድራሻ",
+      "emailPlaceholder": "your@email.com",
+      "message": "መልእክት",
+      "messagePlaceholder": "መልእክትዎ...",
+      "submit": "መልእክት ይላኩ",
+      "sending": "በመላክ ላይ...",
+      "success": "✓ መልእክት በተሳካ ሁኔታ ተልኳል!",
+      "successMessage": "በ24 ሰዓታት ውስጥ እንመልስልዎታለን።",
+      "errors": {
+        "nameRequired": "ስም ያስፈልጋል",
+        "nameMin": "ስም ቢያንስ 2 ፊደላት መሆን አለበት",
+        "emailRequired": "ኢሜይል ያስፈልጋል",
+        "emailInvalid": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ",
+        "messageRequired": "መልእክት ያስፈልጋል",
+        "messageMin": "መልእክት ቢያንስ 10 ፊደላት መሆን አለበት"
+      }
+    }
+  },
+  "Footer": {
+    "brand": {
+      "description": "በዘመናዊ ቴክኖሎጂዎች አስደናቂ የድር ተሞክሮዎችን መገንባት።"
+    },
+    "quickLinks": {
+      "title": "ፈጣን አገናኞች",
+      "aboutUs": "ስለ እኛ",
+      "services": "አገልግሎቶች",
+      "resources": "ሀብቶች",
+      "gallery": "ማዕከለ-ስዕላት"
+    },
+    "support": {
+      "title": "ድጋፍ",
+      "contactUs": "ያግኙን",
+      "faq": "ተዘውትረው የሚጠየቁ ጥያቄዎች",
+      "privacyPolicy": "የግላዊነት ፖሊሲ",
+      "termsOfService": "የአገልግሎት ውሎች"
+    },
+    "newsletter": {
+      "title": "ይመዝገቡ",
+      "description": "የቅርብ ጊዜ መረጃዎችን እና ዜናዎችን ያግኙ።",
+      "placeholder": "ኢሜይልዎን ያስገቡ",
+      "button": "ይመዝገቡ",
+      "success": "በተሳካ ሁኔታ ተመዝግበዋል!",
+      "error": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ"
+    },
+    "copyright": "© {year} ጂ ኤስ ማይኒንግ እና ትሬዲንግ ኃ.የተ.የግ.ማ. ሁሉም መብቶች የተጠበቁ ናቸው።",
+    "social": {
+      "facebook": "ፌስቡክ",
+      "twitter": "ትዊተር",
+      "instagram": "ኢንስታግራም",
+      "linkedin": "ሊንክድኢን",
+      "youtube": "ዩቲዩብ"
+    }
   }
 }

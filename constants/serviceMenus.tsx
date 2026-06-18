@@ -17,42 +17,14 @@ export const technologiesMenus = [
   },
   {
     icon: Database,
-    title: "Data & Analytics",
+    title: "Data & Analytics & AI & Machine Learning",
     description: "Data engineering, BI, and real-time analytics solutions.",
     href: "/services/data-analytics",
     id: 3,
   },
-  {
-    icon: Shield,
-    title: "Cybersecurity",
-    description: "Enterprise-grade security assessments and implementation.",
-    href: "/services/cybersecurity",
-    id: 4,
-  },
-  {
-    icon: Cpu,
-    title: "AI & Machine Learning",
-    description: "Intelligent automation and predictive model development.",
-    href: "/services/ai-ml",
-    id: 6,
-  },
 ]
 
 export const miningMenus = [
-  {
-    icon: Pickaxe,
-    title: "Mineral Exploration",
-    description: "Advanced geological surveying and exploration services.",
-    href: "/services/mineral-exploration",
-    id: 7,
-  },
-  {
-    icon: Gem,
-    title: "Gemstone & Mineral Trading",
-    description: "Ethical sourcing and trading of precious minerals.",
-    href: "/services/gemstone-trading",
-    id: 8,
-  },
   {
     icon: Drill,
     title: "Mining Operations",

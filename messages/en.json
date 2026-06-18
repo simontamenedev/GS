@@ -1,12 +1,38 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "title": "Hello world!",
+    "hero": {
+      "title": "Long-Term",
+      "titleHighlight": "Corporate Ambition",
+      "subtitle": "with Vetted Talent You Can Trust",
+      "description": "Green Share Future is positioned to evolve into an integrated African green energy, smart infrastructure, electric mobility, mining, logistics, and digital transformation company supporting Ethiopia's long-term sustainable development."
+    }
   },
   "Navigation": {
     "home": "Home",
     "services": "Services",
     "resources": "Resources",
-    "getInTouch": "Get In Touch"
+    "getInTouch": "Get In Touch",
+    "ourStory": "Our Story",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "about": "About"
+  },
+  "TrustedBy": {
+    "title": "Trusted By",
+    "subtitle": "Leading companies and organizations worldwide"
+  },
+  "ProjectSuccess": {
+    "badge": "Our Impact",
+    "title": "Measurable",
+    "titleHighlight": "Success",
+    "stats": {
+      "projectsDelivered": "Projects Delivered",
+      "clientSatisfaction": "Client Satisfaction",
+      "expertEngineers": "Expert Engineers",
+      "globalClients": "Global Clients",
+      "yearsExperience": "Years of Experience"
+    }
   },
   "Language": {
     "english": "English",
@@ -15,6 +41,40 @@
   },
   "Company": {
     "name": "GS Mining and Trading PLC"
+  },
+  "Resources": {
+    "title": "Resources",
+    "testimonials": "Testimonials",
+    "gallery": "Gallery",
+    "ourStory": "Our Story",
+    "learn": "Learn",
+    "company": "Company"
+  },
+  "Services": {
+    "heading": "What",
+    "headingHighlight": "We Offer",
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions designed to meet your business needs",
+    "tech": {
+      "title": "Technology Solutions",
+      "description": "Cutting-edge digital transformation and smart technology solutions"
+    },
+    "mining": {
+      "title": "Mining Operations",
+      "description": "Sustainable and efficient mining operations with safety first"
+    },
+    "importExport": {
+      "title": "Import & Export",
+      "description": "Global trade and logistics solutions for your business needs"
+    },
+    "energy": {
+      "title": "Energy Solutions",
+      "description": "Innovative renewable energy and power solutions"
+    },
+    "partnerships": {
+      "title": "Global Partnerships",
+      "description": "Building strategic partnerships across Africa and beyond"
+    }
   },
   "MissionVision": {
     "badge": "About Us",
@@ -39,5 +99,69 @@
     },
     "footer": "Join us in building a sustainable future",
     "ctaButton": "Get In Touch"
+  },
+  "Contact": {
+    "title": "Contact",
+    "us": "US",
+    "subtitle": "Have questions? We'd love to hear from you.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "workingHours": "Working Hours",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "✓ Message sent successfully!",
+      "successMessage": "We'll get back to you within 24 hours.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "nameMin": "Name must be at least 2 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must be at least 10 characters"
+      }
+    }
+  },
+  "Footer": {
+    "brand": {
+      "description": "Building amazing web experiences with modern technologies."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "resources": "Resources",
+      "gallery": "Gallery"
+    },
+    "support": {
+      "title": "Support",
+      "contactUs": "Contact Us",
+      "faq": "FAQ",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    },
+    "newsletter": {
+      "title": "Subscribe",
+      "description": "Get the latest updates and news.",
+      "placeholder": "Enter your email",
+      "button": "Subscribe",
+      "success": "Subscribed successfully!",
+      "error": "Please enter a valid email address"
+    },
+    "copyright": "© {year} GS Mining and Trading PLC. All rights reserved.",
+    "social": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    }
   }
 }

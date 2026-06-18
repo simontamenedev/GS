@@ -1,17 +1,19 @@
 import { companyMenus, learnMenus, serviceMenus } from "@/constants/resource"
 import { cn } from "@/utils/utils"
 import { File, Users, Star, Building2, BookOpen, Briefcase, Clock, TrendingUp } from "lucide-react"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 
 
 
 function ResourcesMenu() {
+    const t = useTranslations("Resources")
   return (
       <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
         {/* Resources Column */}
         <div>
-          <h2 className='text-2xl font-bold mb-6 text-gray-900'>Resources</h2>
+          <h2 className='text-2xl font-bold mb-6 text-gray-900'>{t('title')}</h2>
           <nav className="space-y-4">
             {serviceMenus.map((menu) => (
               <Link 
@@ -48,7 +50,7 @@ function ResourcesMenu() {
 
         {/* Learn Column */}
         <div>
-          <h2 className='text-2xl font-bold mb-6 text-gray-900'>Learn</h2>
+          <h2 className='text-2xl font-bold mb-6 text-gray-900'>{t('learn')}</h2>
           <nav className="space-y-4">
             {learnMenus.map((menu) => (
               <Link 
@@ -85,7 +87,7 @@ function ResourcesMenu() {
 
         {/* Company Column */}
         <div>
-          <h2 className='text-2xl font-bold mb-6 text-gray-900'>Company</h2>
+          <h2 className='text-2xl font-bold mb-6 text-gray-900'>{t('company')}</h2>
           <nav className="space-y-4">
             {companyMenus.map((menu) => (
               <Link 

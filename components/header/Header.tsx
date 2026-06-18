@@ -7,16 +7,18 @@ import { useRef, useState } from "react"
 import { cn } from "@/utils/utils"
 import Button from "../button/button"
 import { useLocale, useTranslations } from "next-intl"
-import { useRouter } from "next/navigation"
 import { languages } from "@/constants/languages"
 import { MenuType } from "@/types/MenuType"
 import MegaMenu from "./megamenu/megamenu"
 import MobileMenu from "./mobileMenu/mobileMenu"
+import { navLinks } from "@/constants/navLinks"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState<MenuType>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const closeTimeout = useRef<NodeJS.Timeout | null>(null)
+  const pathname = usePathname()
 
   const t = useTranslations("Navigation")
   const companyT = useTranslations("Company")
@@ -82,14 +84,29 @@ export default function Header() {
             className='hidden md:flex items-center gap-6 lg:gap-10 flex-1 justify-center'
             onMouseLeave={closeMenu}
           >
-            <Link
-              href='/'
-              className='font-medium hover:text-green-600 hover:scale-105 hover:font-bold transition-all'
-            >
-              {t("home")}
-            </Link>
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href
 
-            <Button
+              return (
+                  <Link
+                    key={link.id}
+                    href={link.href}
+                    className={`
+                  font-medium transition-all duration-300
+                  ${
+                    isActive
+                      ? "text-green-600 hover:text-green-700"
+                      : "text-gray-700 dark:text-gray-300 hover:text-green-600"
+                  }
+                  hover:scale-105 hover:font-bold
+                `}
+                  >
+                    {t(link.label)}
+                  </Link>
+              )
+            })}
+
+            {/* <Button
               type='button'
               variant='none'
               className='flex items-center gap-2 font-medium hover:text-green-600 hover:scale-105 hover:font-bold transition-all'
@@ -97,9 +114,9 @@ export default function Header() {
             >
               {t("services")}
               <Grip size={16} />
-            </Button>
+            </Button> */}
 
-            <Button
+            {/* <Button
               type='button'
               variant='none'
               className='flex items-center gap-2 font-medium hover:text-green-600 hover:scale-105 hover:font-bold transition-all'
@@ -107,7 +124,7 @@ export default function Header() {
             >
               {t("resources")}
               <Grip size={16} />
-            </Button>
+            </Button> */}
           </nav>
 
           {/* Language Selector - Desktop */}
@@ -125,7 +142,7 @@ export default function Header() {
 
           {/* Desktop Get In Touch Button */}
           <div className='hidden md:flex items-center gap-4'>
-            <Button className='font-bold'>{t("getInTouch")}</Button>
+            <Button className='font-bold'><Link href='/contact'>{t("getInTouch")}</Link></Button>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -158,7 +175,7 @@ export default function Header() {
         <div
           className={cn(
             activeMenu === "language" ? "block" : "hidden",
-            "md:block"
+            "md:block",
           )}
         >
           <MegaMenu

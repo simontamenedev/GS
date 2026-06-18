@@ -5,7 +5,11 @@ import Link from "next/link"
 import { cn } from "@/utils/utils"
 import { ChevronDown, ChevronUp } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { importExportMenus, miningMenus, technologiesMenus } from "@/constants/serviceMenus"
+import {
+  importExportMenus,
+  miningMenus,
+  technologiesMenus,
+} from "@/constants/serviceMenus"
 import { companyMenus, learnMenus, serviceMenus } from "@/constants/resource"
 import Button from "@/components/button/button"
 
@@ -26,22 +30,36 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <div
       className={cn(
         "fixed top-[72px] left-0 right-0 bottom-0 bg-white min-h-screen  md:hidden overflow-y-auto transition-transform duration-300 ease-in-out",
-        isOpen ? "translate-x-0" : "translate-x-full"
+        isOpen ? "translate-x-0" : "translate-x-full",
       )}
     >
-      <div className="p-4 space-y-2">
+      <div className='p-4 space-y-2'>
         {/* Home Link */}
         <Link
-          href="/"
-          className="block py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors"
+          href='/'
+          className='block py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors'
           onClick={onClose}
         >
           {t("home")}
         </Link>
+        <Link
+          href='/our-story'
+          className='block py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors'
+          onClick={onClose}
+        >
+          {t("ourStory")}
+        </Link>
+        <Link
+          href='/gallery'
+          className='block py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors'
+          onClick={onClose}
+        >
+          {t("gallery")}
+        </Link>
 
         {/* Services Section */}
-        <div className="border-b border-gray-100">
-          <button
+        <div className='border-b border-gray-100'>
+          {/* <button
             onClick={() => toggleSection("services")}
             className="w-full flex items-center justify-between py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors"
           >
@@ -51,26 +69,30 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             ) : (
               <ChevronDown className="w-5 h-5 text-gray-500" />
             )}
-          </button>
+          </button> */}
 
           {expandedSection === "services" && (
-            <div className="pl-4 pb-3 space-y-3">
+            <div className='pl-4 pb-3 space-y-3'>
               {/* Technologies */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Technologies
                 </h4>
                 {technologiesMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -78,20 +100,24 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
               {/* Mining */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Mining
                 </h4>
                 {miningMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -99,20 +125,24 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
               {/* Import & Export */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Import & Export
                 </h4>
                 {importExportMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -122,8 +152,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         {/* Resources Section */}
-        <div className="border-b border-gray-100">
-          <button
+        <div className='border-b border-gray-100'>
+          {/* <button
             onClick={() => toggleSection("resources")}
             className="w-full flex items-center justify-between py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors"
           >
@@ -133,26 +163,30 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             ) : (
               <ChevronDown className="w-5 h-5 text-gray-500" />
             )}
-          </button>
+          </button> */}
 
           {expandedSection === "resources" && (
-            <div className="pl-4 pb-3 space-y-3">
+            <div className='pl-4 pb-3 space-y-3'>
               {/* Resources */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Resources
                 </h4>
                 {serviceMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-green-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -160,20 +194,24 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
               {/* Learn */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Learn
                 </h4>
                 {learnMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -181,20 +219,24 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
               {/* Company */}
               <div>
-                <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2">
+                <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 py-2'>
                   Company
                 </h4>
                 {companyMenus.map((item) => (
                   <Link
                     key={item.id}
                     href={item.href}
-                    className="flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors"
+                    className='flex items-start gap-3 py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors'
                     onClick={onClose}
                   >
-                    <item.icon className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
+                    <item.icon className='w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5' />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">{item.title}</p>
-                      <p className="text-xs text-gray-500 line-clamp-1">{item.description}</p>
+                      <p className='text-sm font-medium text-gray-900'>
+                        {item.title}
+                      </p>
+                      <p className='text-xs text-gray-500 line-clamp-1'>
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
@@ -204,10 +246,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         {/* Get In Touch Button */}
-        <div className="pt-4 px-4">
-          <Button className="w-full font-bold justify-center" onClick={onClose}>
-            {t("getInTouch")}
-          </Button>
+        <div className='pt-4 px-4'>
+          <Button className='w-full font-bold justify-center' onClick={onClose}>
+              <Link href='/contact'>{t("getInTouch")}</Link>
+            </Button>
         </div>
       </div>
     </div>

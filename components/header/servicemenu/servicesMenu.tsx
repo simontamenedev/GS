@@ -4,29 +4,17 @@ import {
   technologiesMenus,
 } from "@/constants/serviceMenus"
 import { cn } from "@/utils/utils"
-import {
-  Cpu,
-  Database,
-  Cloud,
-  Shield,
-  Code2,
-  Layout,
-  Pickaxe,
-  Gem,
-  Drill,
-  Truck,
-  Ship,
-  Globe,
-} from "lucide-react"
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
 
 function ServicesMenu() {
+  const t = useTranslations("Services")
   return (
     <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
       {/* Technologies Column */}
       <div>
-        <h2 className='text-2xl font-bold mb-6 text-gray-900'>Technologies</h2>
+        <h2 className='text-2xl font-bold mb-6 text-gray-900'>{t("tech")}</h2>
         <nav className='space-y-3'>
           {technologiesMenus.map((menu) => (
             <Link
@@ -67,7 +55,7 @@ function ServicesMenu() {
 
       {/* Mining Column */}
       <div>
-        <h2 className='text-2xl font-bold mb-6 text-gray-900'>Mining</h2>
+        <h2 className='text-2xl font-bold mb-6 text-gray-900'>{t('mining')}</h2>
         <nav className='space-y-3'>
           {miningMenus.map((menu) => (
             <Link
@@ -109,7 +97,7 @@ function ServicesMenu() {
       {/* Import & Export Column */}
       <div>
         <h2 className='text-2xl font-bold mb-6 text-gray-900'>
-          Import & Export
+          {t('ImportExport')}
         </h2>
         <nav className='space-y-3'>
           {importExportMenus.map((menu) => (
