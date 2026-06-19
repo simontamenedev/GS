@@ -114,7 +114,7 @@ const ServicesSection = () => {
                 {/* Gradient background on hover */}
                 <div className={cn(
                   "absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-                  `bg-gradient-to-br ${colors.gradient}`
+                  `bg-linear-to-br ${colors.gradient}`
                 )} />
 
                 {/* Icon */}
@@ -147,7 +147,7 @@ const ServicesSection = () => {
                 {/* Decorative line */}
                 <div className={cn(
                   "absolute bottom-0 left-0 right-0 h-1",
-                  "bg-gradient-to-r",
+                  "bg-linear-to-r",
                   `from-${service.color}-500 to-${service.color}-400`,
                   "scale-x-0 group-hover:scale-x-100",
                   "transition-transform duration-500 origin-left"
@@ -156,7 +156,6 @@ const ServicesSection = () => {
             )
           })}
         </div>
-
       </div>
     </section>
   )

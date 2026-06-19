@@ -72,7 +72,7 @@ export default function Header() {
       <header className='z-50 sticky top-0 bg-white/50 backdrop-blur-md'>
         <div className='flex items-center justify-between gap-4 py-3 px-4 md:px-6 lg:px-8'>
           {/* Logo */}
-          <Link href='/' className='flex items-center gap-2 flex-shrink-0'>
+          <Link href='/' className='flex items-center gap-2 shrink-0'>
             <Image src='/gs.png' alt='Logo' width={40} height={40} />
             <span className='text-xl font-bold hidden sm:inline-block'>
               {companyT("name")}

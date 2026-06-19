@@ -59,13 +59,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 - Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-gray-500 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-linear-to-r from-green-400 to-gray-500 bg-clip-text text-transparent">
               {companyName}
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               {t("brand.description")}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -81,7 +81,7 @@ const Footer = () => {
                   </div>
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2 - Quick Links */}
@@ -155,7 +155,7 @@ const Footer = () => {
                 type="submit"
                 className={cn(
                   "px-4 py-2 rounded-lg",
-                  "bg-gradient-to-r from-green-500 to-gray-600",
+                  "bg-linear-to-r from-green-500 to-gray-600",
                   "text-white font-medium",
                   "hover:from-green-600 hover:to-gray-700",
                   "transform hover:scale-105",

@@ -13,10 +13,219 @@
     "services": "Services",
     "resources": "Resources",
     "getInTouch": "Get In Touch",
-    "ourStory": "Our Story",
+    "ourStory": "About",
     "gallery": "Gallery",
+    "ProductandServices":"Products and Services",
     "testimonials": "Testimonials",
     "about": "About"
+  },
+  "Solutions": {
+  "title": "Our",
+  "titleHighlight": "Solutions",
+  "subtitle": "Delivering sustainable innovation across renewable energy, technology, mining, logistics, software, and community development.",
+
+  "products": "Products & Services",
+  "industries": "Industries",
+  "benefits": "Benefits",
+
+  "energy": {
+    "title": "Renewable Energy",
+    "description": "We develop sustainable renewable energy solutions that accelerate clean energy adoption across Africa.",
+    "products": [
+      "Solar Power Systems",
+      "Battery Energy Storage",
+      "Mini-Grid Solutions",
+      "Rural Electrification",
+      "AI Energy Monitoring",
+      "Smart Metering",
+      "Energy Consulting"
+    ],
+    "industries": [
+      "Government",
+      "Commercial Buildings",
+      "Manufacturing",
+      "Agriculture",
+      "Residential"
+    ],
+    "benefits": [
+      "Reduce energy costs",
+      "Reliable electricity",
+      "Clean energy",
+      "Sustainable development"
+    ]
+  },
+
+  "mobility": {
+    "title": "Electric Mobility",
+    "description": "Building Ethiopia's electric transportation ecosystem through innovative mobility solutions.",
+    "products": [
+      "Electric Bajaj",
+      "EV Charging Stations",
+      "Battery Swapping",
+      "Fleet Electrification",
+      "Charging Management Platform",
+      "EV Maintenance"
+    ],
+    "industries": [
+      "Public Transport",
+      "Taxi Services",
+      "Private Companies",
+      "Government"
+    ],
+    "benefits": [
+      "Lower fuel costs",
+      "Reduce emissions",
+      "Modern transportation",
+      "Smart fleet management"
+    ]
+  },
+
+  "technology": {
+    "title": "Technology & AI",
+    "description": "Empowering organizations with AI, cloud computing, IoT, and smart digital infrastructure.",
+    "products": [
+      "Artificial Intelligence",
+      "Cloud Infrastructure",
+      "IoT Platforms",
+      "Smart Cities",
+      "Automation",
+      "Cyber Security",
+      "Data Analytics",
+      "Digital Transformation"
+    ],
+    "industries": [
+      "Government",
+      "Healthcare",
+      "Education",
+      "Finance",
+      "Manufacturing"
+    ],
+    "benefits": [
+      "Improve efficiency",
+      "Reduce operational costs",
+      "Increase productivity",
+      "Real-time analytics"
+    ]
+  },
+
+  "mining": {
+    "title": "Mining",
+    "description": "Delivering sustainable mining operations and mineral development with international standards.",
+    "products": [
+      "Gold Mining",
+      "Mineral Exploration",
+      "Mineral Processing",
+      "Mining Logistics",
+      "Environmental Assessment",
+      "Mining Equipment"
+    ],
+    "industries": [
+      "Mining Companies",
+      "Government",
+      "Export",
+      "Industrial"
+    ],
+    "benefits": [
+      "Responsible mining",
+      "Environmental sustainability",
+      "Higher productivity",
+      "Resource optimization"
+    ]
+  },
+
+  "logistics": {
+    "title": "Logistics",
+    "description": "Providing efficient logistics and industrial infrastructure solutions across Africa.",
+    "products": [
+      "Supply Chain Management",
+      "Freight Services",
+      "Warehousing",
+      "Industrial Infrastructure",
+      "Transportation",
+      "Import & Export"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Retail",
+      "Agriculture",
+      "Construction"
+    ],
+    "benefits": [
+      "Fast delivery",
+      "Lower logistics costs",
+      "Reliable transportation",
+      "Efficient operations"
+    ]
+  },
+
+  "software": {
+    "title": "Software Development",
+    "description": "Building enterprise software, AI platforms, web applications, and digital ecosystems.",
+    "products": [
+      "Web Applications",
+      "Mobile Applications",
+      "ERP Systems",
+      "Marketplace Platforms",
+      "AI Solutions",
+      "Cloud Applications",
+      "API Development",
+      "UI/UX Design"
+    ],
+    "industries": [
+      "Finance",
+      "Healthcare",
+      "Government",
+      "Education",
+      "Private Sector"
+    ],
+    "benefits": [
+      "Digital transformation",
+      "Business automation",
+      "Scalable systems",
+      "Improved customer experience"
+    ]
+  },
+
+  "community": {
+    "title": "Community Empowerment",
+    "description": "Empowering communities through education, innovation, entrepreneurship, and employment.",
+    "products": [
+      "Youth Entrepreneurship",
+      "Technical Training",
+      "Digital Skills",
+      "Employment Programs",
+      "Women Empowerment",
+      "Community Development"
+    ],
+    "industries": [
+      "Education",
+      "NGOs",
+      "Government",
+      "Communities"
+    ],
+    "benefits": [
+      "Job creation",
+      "Economic growth",
+      "Skills development",
+      "Social impact"
+    ]
+  }
+},
+ 
+  "Gallery": {
+    "title": "Gallery",
+    "subtitle": "A visual journey through our projects and impact",
+    "categories": {
+      "all": "All",
+      "mining": "Mining",
+      "energy": "Energy",
+      "technology": "Technology"
+    },
+    "items": {
+      "mining": "Mining Operations",
+      "energy": "Green Energy",
+      "technology": "Tech Innovation"
+    }
   },
   "TrustedBy": {
     "title": "Trusted By",
@@ -40,13 +249,13 @@
     "selectLanguage": "Select Language"
   },
   "Company": {
-    "name": "GS Mining and Trading PLC"
+    "name": "Green Share Future PLC"
   },
   "Resources": {
     "title": "Resources",
     "testimonials": "Testimonials",
     "gallery": "Gallery",
-    "ourStory": "Our Story",
+    "ourStory": "About",
     "learn": "Learn",
     "company": "Company"
   },
@@ -155,7 +364,7 @@
       "success": "Subscribed successfully!",
       "error": "Please enter a valid email address"
     },
-    "copyright": "© {year} GS Mining and Trading PLC. All rights reserved.",
+    "copyright": "© {year} Green Share Future PLC. All rights reserved.",
     "social": {
       "facebook": "Facebook",
       "twitter": "Twitter",

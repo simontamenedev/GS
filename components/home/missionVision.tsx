@@ -55,7 +55,7 @@ const MissionVision = () => {
           {/* Vision Card */}
           <div className="animate-on-scroll opacity-0 group">
             <div className="relative h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 md:p-10 border border-gray-100 hover:border-green-200 overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-100/50 to-transparent rounded-full -mr-16 -mt-16" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-green-100/50 to-transparent rounded-full -mr-16 -mt-16" />
               <div className="relative">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-green-100 rounded-xl group-hover:scale-110 transition-transform duration-300">
@@ -78,7 +78,7 @@ const MissionVision = () => {
 
           {/* Mission Card */}
           <div className="animate-on-scroll opacity-0 group" style={{ animationDelay: '0.2s' }}>
-            <div className="relative h-full bg-gradient-to-br from-green-600 to-green-700 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 md:p-10 overflow-hidden">
+            <div className="relative h-full bg-linear-to-br from-green-600 to-green-700 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 md:p-10 overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16" />
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/5 rounded-full -ml-20 -mb-20" />
               <div className="relative">
@@ -133,15 +133,7 @@ const MissionVision = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center animate-on-scroll opacity-0">
-          <p className="text-gray-600 mb-4">
-            {t("footer") || "Join us in building a sustainable future"}
-          </p>
-          <button className="px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-all hover:shadow-lg hover:scale-105">
-            {t("ctaButton") || "Get In Touch"}
-          </button>
-        </div>
+        
       </div>
 
      

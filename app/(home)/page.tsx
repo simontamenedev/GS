@@ -30,10 +30,10 @@ const Page = () => {
             <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight'>
               {t("hero.title")}
               <br />
-              <span className='bg-gradient-to-r from-green-400 via-green-300 to-green-400 bg-clip-text text-transparent'>
+              <span className='bg-linear-to-r from-green-400 via-green-300 to-green-400 bg-clip-text text-transparent'>
                 {t("hero.titleHighlight")}
               </span>
-            </h1>
+            </h1> 
 
             <p className='text-xl sm:text-2xl md:text-3xl text-gray-200 mt-4 md:mt-6 font-light'>
               {t("hero.subtitle")}
