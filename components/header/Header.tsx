@@ -126,7 +126,10 @@ export default function Header() {
               <Grip size={16} />
             </Button> */}
           </nav>
-
+ {/* Desktop Get In Touch Button */}
+          <div className='hidden md:flex items-center gap-4'>
+            <Button className='font-bold'><Link href='/contact'>{t("getInTouch")}</Link></Button>
+          </div>
           {/* Language Selector - Desktop */}
           <Button
             type='button'
@@ -140,10 +143,7 @@ export default function Header() {
             <Grip size={16} />
           </Button>
 
-          {/* Desktop Get In Touch Button */}
-          <div className='hidden md:flex items-center gap-4'>
-            <Button className='font-bold'><Link href='/contact'>{t("getInTouch")}</Link></Button>
-          </div>
+         
 
           {/* Mobile Hamburger Menu */}
           <div className='flex md:hidden items-center gap-3'>
