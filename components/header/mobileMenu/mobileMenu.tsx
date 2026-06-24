@@ -56,6 +56,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           {t("gallery")}
         </Link>
+        <Link
+          href='/product-service'
+          className='block py-3 px-4 text-lg font-medium hover:bg-gray-50 rounded-lg transition-colors'
+          onClick={onClose}
+        >
+          {t("ProductandServices")}
+        </Link>
 
         {/* Services Section */}
         <div className='border-b border-gray-100'>

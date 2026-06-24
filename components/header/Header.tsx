@@ -63,14 +63,14 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       <div
         className={cn(
-          "fixed inset-0 bg-black/50 transition-all duration-300 z-40 md:hidden",
+          "fixed inset-0 bg-black/50 transition-all duration-300 z-40 lg:hidden",
           isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible",
         )}
         onClick={toggleMobileMenu}
       />
 
       <header className='z-50 sticky top-0 bg-white/50 backdrop-blur-md'>
-        <div className='flex items-center justify-between gap-4 py-3 px-4 md:px-6 lg:px-8'>
+        <div className='flex items-center justify-between gap-4 py-3 px-4 lg:px-6 lg:px-8'>
           {/* Logo */}
           <Link href='/' className='flex items-center gap-2 shrink-0'>
             <Image src='/gs.png' alt='Logo' width={40} height={40} />
@@ -81,7 +81,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav
-            className='hidden md:flex items-center gap-6 lg:gap-10 flex-1 justify-center'
+            className='hidden lg:flex items-center gap-6 lg:gap-10 flex-1 justify-center'
             onMouseLeave={closeMenu}
           >
             {navLinks.map((link) => {
@@ -127,14 +127,14 @@ export default function Header() {
             </Button> */}
           </nav>
  {/* Desktop Get In Touch Button */}
-          <div className='hidden md:flex items-center gap-4'>
+          <div className='hidden lg:flex items-center gap-4'>
             <Button className='font-bold'><Link href='/contact'>{t("getInTouch")}</Link></Button>
           </div>
           {/* Language Selector - Desktop */}
           <Button
             type='button'
             variant='none'
-            className='hidden md:flex items-center gap-2 font-medium hover:text-green-600 transition-colors'
+            className='hidden lg:flex items-center gap-2 font-medium hover:text-green-600 transition-colors'
             onMouseEnter={() => openMenu("language")}
             onMouseLeave={closeMenu}
           >
@@ -146,7 +146,7 @@ export default function Header() {
          
 
           {/* Mobile Hamburger Menu */}
-          <div className='flex md:hidden items-center gap-3'>
+          <div className='flex lg:hidden items-center gap-3'>
             <Button
               type='button'
               variant='none'
@@ -175,7 +175,7 @@ export default function Header() {
         <div
           className={cn(
             activeMenu === "language" ? "block" : "hidden",
-            "md:block",
+            "lg:block",
           )}
         >
           <MegaMenu
