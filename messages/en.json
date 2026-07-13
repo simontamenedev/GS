@@ -9,6 +9,7 @@
     }
   },
   "Navigation": {
+    "about-company":"Green Share Future is a technology company dedicated to delivering innovative, secure, and scalable digital transformation solutions for government institutions, financial institutions, insurance companies, and private enterprises. The company specializes in designing and implementing enterprise software systems that streamline operations, enhance regulatory compliance, and improve customer experience. Our multidisciplinary team combines expertise in enterprise software engineering, cloud computing, financialtechnology, systems integration, cybersecurity, artificial intelligence, and data analytics. We have delivered business-critical applications that support high transaction volumes while maintaining reliability, security, and performance. ",
     "home": "Home",
     "services": "Services",
     "resources": "Resources",
@@ -290,10 +291,10 @@
     "title": "Our Mission & Vision",
     "subtitle": "Driving sustainable transformation across Africa",
     "visionTitle": "Vision",
-    "vision": "To become Africa's leading integrated green energy, smart infrastructure, electric mobility, mining, and technology company — driving sustainable industrial transformation, clean energy access, digital innovation, and inclusive economic growth across Ethiopia and beyond",
+    "vision": "To become a leading developer and operator of scalable digital platforms and solutions in Ethiopia and selected international markets by 2030.",
     "visionCta": "Our ambition",
     "missionTitle": "Mission",
-    "mission": "Green Share Future is committed to transforming Ethiopia's future through renewable energy systems, smart technologies, electric mobility, sustainable mining, digital infrastructure, and strategic industrial solutions. The company strives to create innovative, environmentally responsible, and economically impactful businesses that empower communities, create jobs, accelerate technological advancement, and contribute to national development",
+    "mission": "To design, build, and operate commercially viable digital platforms and solutions that solve real business problems, enable efficient transactions, and generate sustainable revenue and long-term competitive.",
     "missionCta": "Our commitment",
     "coreValuesTitle": "Core Values",
     "coreValuesSubtitle": "The principles that guide everything we do",

@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 const Page = () => {
     const t = useTranslations("Navigation")
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 sm:py-16 md:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +16,12 @@ const Page = () => {
           </h1>
           <div className="w-20 h-1 bg-green-600 mx-auto mt-4 rounded-full" />
         </div>
-
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 dark:border-gray-700">
+          
+            <p>
+              {t('about-company')}
+            </p>
+          </div>
         {/* Story Content */}
         {/* <div className="space-y-8 text-gray-700 dark:text-gray-300 leading-relaxed">
           
