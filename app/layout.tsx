@@ -13,12 +13,82 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "GS Mining and Trading PLC",
-  description: "",
-  keywords: ["GS","Trading","software"],
 
-};
+export const metadata: Metadata = {
+  title: {
+    default: "Green Share Future PLC",
+    template: "%s | Green Share Future PLC",
+  },
+
+  description:
+    "Green Share Future PLC is a digital platform providing e-invoicing, business management, tenant management, and enterprise software solutions.",
+
+  keywords: [
+    "Green Share Future PLC",
+    "Green Share",
+    "GSF",
+    "E-Invoice",
+    "Electronic Invoice",
+    "ERP",
+    "Business Management System",
+    "Invoice Management",
+    "Accounting Software",
+    "Enterprise Software",
+    "Tenant Management",
+    "Multi Tenant Platform",
+    "POS System",
+    "Tax Management",
+    "Digital Transformation",
+    "Ethiopia",
+    "Ethiopian Software",
+    "Fintech",
+    "Business Solutions",
+    "Trading PLC",
+    "SaaS Platform",
+    "Inventory Management",
+    "Invoice Automation",
+    "Financial Software",
+    "Cloud Software",
+    "Green Share Future",
+  ],
+
+  applicationName: "Green Share Future PLC",
+
+  authors: [
+    {
+      name: "Green Share Future PLC",
+    },
+  ],
+
+  creator: "Green Share Future PLC",
+
+  publisher: "Green Share Future PLC",
+
+  category: "Business",
+
+  // metadataBase: new URL(
+  //   "https://your-domain.com"
+  // ),
+
+  openGraph: {
+    title: "Green Share Future PLC",
+    description:
+      "Enterprise software solutions including e-invoicing, tenant management, and business automation.",
+
+    siteName: "Green Share Future PLC",
+
+    type: "website",
+
+    locale: "en_US",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Green Share Future PLC",
+    description:
+      "Enterprise software and e-invoicing solutions.",
+  },
+}
 
 export default function RootLayout({
   children,
