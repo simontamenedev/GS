@@ -13,16 +13,7 @@ const Page = () => {
       {/* Hero Section with Background Video */}
       <section className='relative min-h-screen'>
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className='absolute inset-0 w-full h-1/2 object-cover'
-        >
-          <source src='/mining.mp4' type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
+     Moasjoaij902 2982922091209 21iwsqiojs qsqwiojsq0sjqwosjqws wswqiusq9wisjqwosiqwsiwqs9qw siqwusnqwius
 
         {/* Content */}
         <div className='relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8'>
