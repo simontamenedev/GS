@@ -28,7 +28,7 @@ const Page = () => {
         <div className='relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8'>
           <div className='max-w-5xl mx-auto text-center'>
             <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight'>
-              {t("hero.title")}
+              ASASASKNOSUNOIUSNS SNOSNKSKJSKSNKS SJNKS
               <br />
               <span className='bg-linear-to-r from-green-400 via-green-300 to-green-400 bg-clip-text text-transparent'>
                 {t("hero.titleHighlight")}
@@ -48,8 +48,8 @@ const Page = () => {
       </section>
       <ServicesSection/>
       {/* OurTrusted Component - Now visible below the hero */}
-      <OurTrusted />
-      <ProjectSuccess />
+      {/* <OurTrusted />
+      <ProjectSuccess /> */}
     </main>
   )
 }
